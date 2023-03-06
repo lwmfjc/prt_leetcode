@@ -1,5 +1,10 @@
-# prt_leetcode
-leetcode-idea解题备份
+## 总述
+leetcode-idea解题备份 
+## idea的LeetCodePlugin插件
+### 插件git地址  
+git地址: ```https://github.com/shuzijun/leetcode-question```
+###  离线安装包备份(配合idea2021.3.2)
+```https://github.com/lwmfjc/leetcode-editor/blob/master/plugin/leetcode-editor-8.6.zip```
 ## idea的LeetCodePlugin插件设置
 
 ![img.png](img.png)
