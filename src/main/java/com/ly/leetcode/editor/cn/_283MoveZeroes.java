@@ -35,10 +35,12 @@
 
 package com.ly.leetcode.editor.cn;
 
+import java.util.Arrays;
+
 public class _283MoveZeroes {
     public static void main(String[] args) {
         Solution solution = new _283MoveZeroes().new Solution();
-
+        solution.moveZeroes(new int[]{1,0,0,1,0,3,12});
     }
 
     //leetcode submit region begin(Prohibit modification and deletion)
@@ -47,21 +49,23 @@ public class _283MoveZeroes {
             if (null == nums || nums.length == 0) {
                 return;
             }
-            int lft = 0;//几个0
-            int rgt = 0;//移动到第几
-            while (rgt < nums.length ) {
-                int num=nums[rgt];
-                if(0 == num){
-                    lft ++;
-                }else {
-                    nums[lft]=nums[rgt];//填充到非零的位置
+            int zeroNum = 0;//记录总共有几个0
+            int numIndex = 0;//用来遍历数组
+            while (numIndex < nums.length) {
+                int num = nums[numIndex];
+                if (0 == num) {
+                    zeroNum++;
+                } else {
+                    //如果前面有zeroNum个0,那么只要遍历到非0数，都要往前
+                    //移动zeroNum个位置
+                    nums[numIndex-zeroNum]=nums[numIndex];
                 }
-                rgt ++;
+                numIndex++;
             }
             //填充了几个0，后面就补上几个零
-            while (lft > 0){
-                nums[nums.length-lft] =0;
-                lft--;
+            while (zeroNum > 0){
+                nums[nums.length-zeroNum] =0;
+                zeroNum--;
             }
         }
     }
