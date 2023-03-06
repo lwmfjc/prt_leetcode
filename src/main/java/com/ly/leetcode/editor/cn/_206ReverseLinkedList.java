@@ -76,7 +76,19 @@ public class _206ReverseLinkedList {
      */
     class Solution {
         public ListNode reverseList(ListNode head) {
-            return null;
+            ListNode prevNode = null;
+            ListNode curNode = head;
+            while (null != curNode) {
+                //暂存当前节点的下一个节点
+                ListNode tempNode = curNode.next;
+                curNode.next = prevNode;
+
+                prevNode = curNode;
+                curNode = tempNode;
+
+
+            }
+            return prevNode;
         }
     }
 //leetcode submit region end(Prohibit modification and deletion)
