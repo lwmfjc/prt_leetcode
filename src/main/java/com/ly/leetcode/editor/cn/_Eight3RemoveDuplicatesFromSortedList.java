@@ -69,10 +69,16 @@ class Solution {
             return head;
         }
         ListNode curNode=head;
+        //遍历链表
         while (curNode!=null ){
+            //为了判断当前节点和下一个节点是否相等
+            //下一个节点为空就跳出判断(链表遍历结束)
             if(curNode.next==null){
                 break;
             }
+            //循环遍历,当前节点和下一个节点是否相等
+            //加while是考虑3个以上重复节点的缘故,直到当前节点
+            //和下一个节点的值不相等(或者没有下一个节点了)
             while (null != curNode.next && curNode.val == curNode.next.val){
                 curNode.next=curNode.next.next;
             }
