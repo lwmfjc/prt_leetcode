@@ -10,13 +10,13 @@ git地址: ```https://github.com/shuzijun/leetcode-question```
 ![img.png](img.png)
 1. CodeFileName
 
-   ```java
+   ```text
    _${question.frontendQuestionId}$!velocityTool.camelCaseName(${question.titleSlug})
    ```
 
 2. CodeTemplate
 
-   ```java
+   ```text
    ${question.content}
    package com.ly.leetcode.editor.cn;
    public class _${question.frontendQuestionId}$!velocityTool.camelCaseName(${question.titleSlug}){
@@ -30,7 +30,7 @@ git地址: ```https://github.com/shuzijun/leetcode-question```
 
 3. TemplateConstant
 
-   ```java
+   ```text
    ${question.title}	题目标题	示例:两数之和
    ${question.titleSlug}	题目标记	示例:two-sum
    ${question.frontendQuestionId}	题目编号
