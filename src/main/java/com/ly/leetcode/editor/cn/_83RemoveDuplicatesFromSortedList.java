@@ -37,9 +37,9 @@ class ListNode {
       ListNode(int val) { this.val = val; }
       ListNode(int val, ListNode next) { this.val = val; this.next = next; }
   }
-public class _Eight3RemoveDuplicatesFromSortedList{
+public class _83RemoveDuplicatesFromSortedList{
     public static void main(String[] args) {
-         Solution solution = new _Eight3RemoveDuplicatesFromSortedList().new Solution();
+         Solution solution = new _83RemoveDuplicatesFromSortedList().new Solution();
         ListNode node1=new ListNode(1);
         ListNode node2=new ListNode(1);
         ListNode node3=new ListNode(2);
