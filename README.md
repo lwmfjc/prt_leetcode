@@ -4,7 +4,7 @@ leetcode-idea解题备份
 ### 插件git地址  
 git地址: ```https://github.com/shuzijun/leetcode-question```
 ###  离线安装包备份(配合idea2021.3.2)
-```https://github.com/lwmfjc/leetcode-editor/blob/master/plugin/leetcode-editor-8.6.zip```
+```https://github.com/lwmfjc/leetcode-editor/blob/master/plugin/leetcode-editor-8.6(idea2021.3.2).zip```
 ## idea的LeetCodePlugin插件设置
 
 ![img.png](img.png)
